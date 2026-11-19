@@ -1,0 +1,46 @@
+---
+name: infrastructure
+description: Template pour planifier l'infrastructure de calcul, le cloud, le datacenter et la capacité.
+---
+
+id: infrastructure
+name: Infrastructure et Calcul
+description: >
+  Planifier l'infrastructure de calcul, le cloud, le datacenter et la capacité.
+  S'applique aux choix de matériel, de fournisseur cloud, d'architecture de déploiement.
+
+recommended_directors:
+  - id: jensen-huang
+    role: Matériel et infrastructure IA
+    focus: "Performance par watt, accélérateurs, TCO, co-design full-stack."
+  - id: satya-nadella
+    role: Cloud et entreprise
+    focus: "Élasticité CapEx vs OpEx, sécurité, conformité, intégration hybride."
+  - id: sundar-pichai
+    role: Produit et scale
+    focus: "Évolutivité, standards ouverts, internationalisation, échelle globale."
+
+key_questions:
+  - Quelles charges de travail définissent nos besoins en calcul, mémoire et réseau ?
+  - Où est le goulot d'étranglement actuel (calcul, mémoire, réseau, stockage) ?
+  - Quel est le coût total de possession (TCO), pas seulement le prix d'achat ?
+  - Quelle stratégie d'achat : réserver, louer ou self-opérer ?
+  - Quelles contraintes énergétiques, de refroidissement et de disponibilité existent ?
+  - Comment l'architecture s'intègre-t-elle dans l'infrastructure existante ?
+
+success_criteria:
+  - Profil de charge de travail et cibles de performance définis.
+  - Modèle TCO incluant puissance, refroidissement, espace, opérations.
+  - Plan de capacité pour 10x, 100x, 1000x d'échelle.
+  - Risques d'approvisionnement et opérationnels identifiés et atténués.
+
+example_inputs:
+  - "Concevoir l'infrastructure de déploiement d'un cluster GPU pour l'entraînement de modèles."
+  - "Choisir entre cloud public, cloud privé et infrastructure on-premise."
+  - "Planifier la capacité d'un service SaaS pour passer de 10k à 1M d'utilisateurs."
+
+when_to_use: >
+  Dès qu'il s'agit de planifier l'infrastructure de calcul, le cloud, le datacenter,
+  ou la capacité de traitement.
+
+mental_models_refs: references/mental-models.md

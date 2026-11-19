@@ -1,0 +1,46 @@
+---
+name: product-strategy
+description: Template pour définir une stratégie produit, prioriser des fonctionnalités ou construire un roadmap.
+---
+
+id: product-strategy
+name: Stratégie Produit
+description: >
+  Définir une stratégie produit, prioriser des fonctionnalités, construire un roadmap,
+  ou décider du positionnement d'un produit sur un marché.
+
+recommended_directors:
+  - id: sundar-pichai
+    role: Produit, écosystème et scale
+    focus: "Problème utilisateur clair, simplicité, écosystème, métriques de valeur."
+  - id: steve-jobs
+    role: Design et simplicité
+    focus: "Expérience end-to-end, simplicité, dire non aux bonnes idées pour protéger la grande."
+  - id: reid-hoffman
+    role: Croissance, réseaux et venture
+    focus: "Effets réseau, growth loops, sélection de marché, blitzscaling si pertinent."
+
+key_questions:
+  - Quel problème utilisateur spécifique résolvons-nous mieux que les alternatives ?
+  - Qui est l'utilisateur cible, et quel est son contexte (bande passante, langue, appareil) ?
+  - Quelles étapes du parcours utilisateur sont inutiles et peuvent être supprimées ?
+  - Quels produits ou partenaires amplifient l'impact ?
+  - Quelle métrique reflète la valeur produit réelle (au-delà du simple nombre de fonctionnalités) ?
+  - Comment équilibrer les produits cœur, les paris adjacents et les paris transformateurs ?
+
+success_criteria:
+  - Augmentation mesurable des utilisateurs actifs et de l'engagement.
+  - Synergie claire avec les autres produits du portefeuille.
+  - Adoption par les développeurs si c'est une plateforme.
+  - Respect des normes de conformité et d'accessibilité globales.
+
+example_inputs:
+  - "Définir le roadmap d'une application de gestion de projet pour équipes distribuées."
+  - "Prioriser les fonctionnalités d'une plateforme e-commerce pour le prochain trimestre."
+  - "Décider du positionnement d'un nouvel outil d'IA pour développeurs."
+
+when_to_use: >
+  Dès qu'il s'agit de stratégie produit, de roadmap, de priorisation de features,
+  ou de positionnement marché.
+
+mental_models_refs: references/mental-models.md

@@ -1,0 +1,46 @@
+---
+name: software-architecture
+description: Template pour prendre des décisions d'architecture logicielle (stack, pattern, déploiement, intégration).
+---
+
+id: software-architecture
+name: Architecture Logicielle
+description: >
+  Prendre des décisions d'architecture logicielle : choix de stack, patterns de conception,
+  intégration avec des systèmes existants, déploiement, évolutivité.
+
+recommended_directors:
+  - id: jensen-huang
+    role: Matériel et infrastructure IA
+    focus: "Coût total de possession, performance par watt, accélérateurs, full-stack."
+  - id: satya-nadella
+    role: Cloud, entreprise et partenariats
+    focus: "Intégration entreprise, sécurité, conformité, build vs buy vs partner."
+  - id: sundar-pichai
+    role: Produit, écosystème et scale
+    focus: "Évolutivité, standards ouverts, internationalisation, modération à grande échelle."
+
+key_questions:
+  - Quelles charges de travail définissent nos besoins en calcul et en stockage ?
+  - Où est le goulot d'étranglement (calcul, mémoire, réseau, pipeline de données) ?
+  - Devons-nous construire, acheter ou nous associer pour chaque composant critique ?
+  - Quelle est l'architecture cible et ses points d'intégration avec l'existant ?
+  - Quelles contraintes de sécurité, conformité et opérations doivent être intégrées dès le jour 1 ?
+  - Comment évolue le coût total de possession à 10x, 100x, 1000x d'échelle ?
+
+success_criteria:
+  - Architecture cible documentée et validée par les parties prenantes.
+  - Modèle TCO (coût total de possession) construit et approuvé.
+  - Plan de capacité et de montée en charge défini.
+  - Risques d'approvisionnement et opérationnels identifiés et atténués.
+
+example_inputs:
+  - "Choisir entre une architecture monolithe et des microservices pour une nouvelle application."
+  - "Concevoir l'infrastructure de déploiement d'un modèle d'IA en production."
+  - "Intégrer un nouveau service avec un ERP existant dans l'entreprise."
+
+when_to_use: >
+  Dès qu'il s'agit de décisions d'architecture logicielle, de choix technologique,
+  ou de conception de systèmes.
+
+mental_models_refs: references/mental-models.md

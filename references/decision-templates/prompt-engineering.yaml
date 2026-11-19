@@ -1,0 +1,46 @@
+---
+name: prompt-engineering
+description: Template pour concevoir, tester et améliorer des prompts et des instructions pour modèles de langage.
+---
+
+id: prompt-engineering
+name: Ingénierie de Prompts
+description: >
+  Concevoir, tester et améliorer des prompts et des instructions pour modèles de langage.
+  S'applique à la génération de texte, de code, de résumés, ou toute tâche pilotée par un LLM.
+
+recommended_directors:
+  - id: steve-jobs
+    role: Design et simplicité
+    focus: "Expérience utilisateur du prompt, clarté, dire non à l'inutile, storytelling."
+  - id: andrew-ng
+    role: Appliqué et data-first
+    focus: "Cas d'usage précieux, baseline simple, error analysis, itération rapide."
+  - id: sam-altman
+    role: Stratégie IA et plateforme
+    focus: "Plateforme vs feature, avantage données, moat, scalabilité du prompt."
+
+key_questions:
+  - Quelle tâche spécifique le prompt doit-il accomplir ?
+  - Quel est le contexte utilisateur et le format de sortie attendu ?
+  - Quelles contraintes doivent être explicites dans le prompt (ton, longueur, sécurité) ?
+  - Comment mesurer la qualité des réponses générées ?
+  - Quels sont les cas d'échec les plus probables et leurs coûts ?
+  - Comment itérer sur le prompt en fonction des retours utilisateurs ?
+
+success_criteria:
+  - Baseline de qualité établie et mesurable.
+  - Taux d'erreur acceptable sur des cas de test représentatifs.
+  - Prompt clair, maintenable et documenté.
+  - Itérations documentées avec amélioration mesurable.
+
+example_inputs:
+  - "Rédiger un prompt pour générer des résumés de réunions à partir de transcripts."
+  - "Concevoir un système de prompts pour un assistant de rédaction de code."
+  - "Améliorer la cohérence des réponses d'un chatbot client sur des sujets techniques."
+
+when_to_use: >
+  Dès qu'il s'agit de rédiger, tester ou améliorer des prompts pour un modèle de langage,
+  seul ou dans un système plus large (agent, chaîne de traitement).
+
+mental_models_refs: references/mental-models.md

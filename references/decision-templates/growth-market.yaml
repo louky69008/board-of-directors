@@ -1,0 +1,46 @@
+---
+name: growth-market
+description: Template pour les stratégies de croissance, go-to-market et expansion sur un marché.
+---
+
+id: growth-market
+name: Croissance et Marché
+description: >
+  Stratégies de croissance, go-to-market et expansion sur un marché. S'applique
+  quand l'enjeu est l'acquisition, l'activation, la rétention ou la distribution.
+
+recommended_directors:
+  - id: reid-hoffman
+    role: Croissance, réseaux et venture
+    focus: "Effets réseau, blitzscaling, growth loops, relations stratégiques."
+  - id: sam-altman
+    role: Stratégie IA et plateforme
+    focus: "S-curve, plateforme vs feature, moat, écosystème d'incitations."
+  - id: sundar-pichai
+    role: Produit et écosystème
+    focus: "Utilisateurs actifs, synergie inter-produits, adoption développeurs, scale."
+
+key_questions:
+  - Quel effet réseau est créé avec chaque utilisateur additionnel ?
+  - Quel côté du marché doit être conquis en premier (marché à deux côtés) ?
+  - Quels boucles de croissance (viral, contenu, moteur de recommandation) existent ?
+  - Quelles sont les 10 relations clés qui pourraient accélérer la progression ?
+  - L'économie unitaire devient-elle profitable à grande échelle ?
+  - Est-ce un moment de capture de marché (blitzscaling) ou un marathon ?
+
+success_criteria:
+  - Modèle d'effet réseau nommé et mesurable.
+  - Boucle de croissance dominante identifiée et accélérée.
+  - Économie unitaire à l'échelle modélisée et viable.
+  - Plan de capital et de partenaires défini pour soutenir la croissance.
+
+example_inputs:
+  - "Définir la stratégie go-to-market d'une nouvelle plateforme de marketplace."
+  - "Accélérer l'adoption d'un produit SaaS B2B auprès des entreprises."
+  - "Concevoir un programme de parrainage pour une application grand public."
+
+when_to_use: >
+  Dès qu'il s'agit de stratégie de croissance, d'acquisition utilisateur,
+  de go-to-market, ou d'expansion sur un nouveau marché.
+
+mental_models_refs: references/mental-models.md

@@ -1,0 +1,50 @@
+---
+name: ai-agent-design
+description: Template pour concevoir, évaluer ou améliorer un agent IA autonome (prompt, outils, mémoire, orchestration).
+---
+
+id: ai-agent-design
+name: Conception d'agent IA
+description: >
+  Créer ou améliorer un agent autonome (prompt, outils, mémoire, orchestration).
+  S'applique aux chatbots, assistants de code, agents de support, ou tout système
+  LLM qui agit de manière autonome ou semi-autonome.
+
+recommended_directors:
+  - id: sam-altman
+    role: Stratégie plateforme et moat
+    focus: "Construire une plateforme, pas une feature isolée ; avantage données et distribution."
+  - id: demis-hassabis
+    role: Rigueur scientifique et expérimentation
+    focus: "Hypothèses claires, baselines, reproductibilité, évaluation des revendications d'IA."
+  - id: feifei-li
+    role: Éthique et humain au centre
+    focus: "Biais, équité, contrôle humain, impact sur les personnes affectées."
+  - id: andrew-ng
+    role: Cas d'usage et qualité des données
+    focus: "Cas d'usage précieux et faisable, qualité des données, error analysis."
+
+key_questions:
+  - Quel problème concret l'agent résout-il pour l'utilisateur ?
+  - Quel niveau d'autonomie est acceptable (humain dans la boucle, entièrement autonome) ?
+  - Quels outils l'agent doit-il pouvoir utiliser (recherche, code, base de données) ?
+  - Comment mesure-t-on la qualité et la fiabilité des réponses ?
+  - Quelles sont les erreurs les plus coûteuses pour l'activité ?
+  - Quelles données l'agent traite-t-il, et quelles sont les contraintes de confidentialité ?
+
+success_criteria:
+  - Taux de succès sur des cas de test réels représentatifs.
+  - Latence acceptable pour l'usage cible.
+  - Pas de dérive éthique ou de biais détecté sur les groupes affectés.
+  - Coût par opération maîtrisé et prévisible.
+
+example_inputs:
+  - "Construire un agent de support client capable de répondre aux questions et créer des tickets."
+  - "Agent de rédaction de code avec accès aux outils de développement et à la base de code."
+  - "Assistant de recherche qui synthétise des documents et cite ses sources."
+
+when_to_use: >
+  Dès qu'il s'agit de concevoir, évaluer ou améliorer un agent LLM, un assistant
+  autonome, ou un système qui combine un modèle de langage avec des outils et de la mémoire.
+
+mental_models_refs: references/mental-models.md

@@ -1,0 +1,47 @@
+---
+name: ethics-review
+description: Template pour évaluer les impacts éthiques, sociétaux et humains d'un projet d'IA ou de logiciel.
+---
+
+id: ethics-review
+name: Revue Éthique et Humain
+description: >
+  Évaluer les impacts éthiques, sociétaux et humains d'un projet d'IA ou de logiciel.
+  S'applique aux systèmes qui traitent des données personnelles, prennent des décisions
+  affectant des personnes, ou ont un impact sur la société.
+
+recommended_directors:
+  - id: feifei-li
+    role: Éthique et humain au centre
+    focus: "Biais, équité multidimensionnelle, contrôle humain, cycle de vie complet."
+  - id: satya-nadella
+    role: Cloud, entreprise et partenariats
+    focus: "Culture d'apprentissage, sécurité, conformité, gestion du changement."
+  - id: demis-hassabis
+    role: Rigueur scientifique
+    focus: "Hypothèses, baselines, reproductibilité, explications alternatives."
+
+key_questions:
+  - Quel problème humain résolvons-nous, et pour qui ?
+  - Qui bénéficie du système, et qui porte les risques ?
+  - Quels groupes pourraient être systématiquement désavantagés ?
+  - Où le jugement humain doit-il rester non négociable (override humain) ?
+  - Comment expliquer le fonctionnement et les limites du système aux personnes affectées ?
+  - Quels mécanismes de réparation et de monitoring sont prévus en cas de dommage ?
+
+success_criteria:
+  - Matrice des parties prenantes et distribution bénéfices/risques documentée.
+  - Analyse des biais et équité sur plusieurs dimensions (pas une seule métrique).
+  - Mécanismes de contrôle humain et d'escalade définis.
+  - Plan de monitoring des impacts réels et de redressement établi.
+
+example_inputs:
+  - "Évaluer un système de scoring de crédit automatisé."
+  - "Revoir un outil de recrutement basé sur l'IA pour détecter les biais."
+  - "Évaluer les impacts d'un agent autonome sur les emplois et les usagers."
+
+when_to_use: >
+  Dès qu'un projet d'IA ou de logiciel traite des données personnelles, prend des
+  décisions affectant des personnes, ou a un impact sociétal potentiel.
+
+mental_models_refs: references/mental-models.md

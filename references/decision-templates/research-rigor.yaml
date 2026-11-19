@@ -1,0 +1,46 @@
+---
+name: research-rigor
+description: Template pour valider des revendications scientifiques, concevoir des expériences et évaluer des preuves.
+---
+
+id: research-rigor
+name: Recherche et Rigueur Scientifique
+description: >
+  Valider des revendications scientifiques, concevoir des expériences et évaluer des preuves.
+  S'applique à l'évaluation de modèles d'IA, de benchmarks, ou de toute affirmation nécessitant preuve.
+
+recommended_directors:
+  - id: demis-hassabis
+    role: Rigueur scientifique
+    focus: "Hypothèse, falsification, baseline, mécanisme plutôt que corrélation."
+  - id: feifei-li
+    role: Éthique et humain
+    focus: "Impact humain, parties prenantes, équité, transparence."
+  - id: andrew-ng
+    role: Appliqué et data-first
+    focus: "Baseline, error analysis, métriques claires, itération empirique."
+
+key_questions:
+  - Quelle hypothèse spécifique testons-nous ?
+  - Quelle observation falsifierait l'hypothèse ?
+  - Quelle est la baseline la plus forte pour cette comparaison ?
+  - Le résultat est-il reproductible et généralisable ?
+  - Quelles explications alternatives pourraient aussi expliquer l'observation ?
+  - Quelle est la taille de l'effet (significative ou juste statistiquement significative) ?
+
+success_criteria:
+  - Hypothèses et critères de falsification définis avant l'expérience.
+  - Baseline établie et documentée.
+  - Métriques d'incertitude et de validité estimées.
+  - Résultats négatifs documentés pour éviter l'effort gaspillé.
+
+example_inputs:
+  - "Valider qu'un nouveau modèle d'IA est réellement meilleur que la version précédente."
+  - "Évaluer une revendication de performance sur un benchmark tiers."
+  - "Concevoir une expérience pour tester l'efficacité d'une technique de prompt."
+
+when_to_use: >
+  Dès qu'il s'agit de valider des revendications, concevoir des expériences,
+  ou évaluer la qualité de preuves scientifiques ou techniques.
+
+mental_models_refs: references/mental-models.md

@@ -1,0 +1,62 @@
+---
+name: decision-templates-registry
+description: Index des templates de décision disponibles. Chaque entrée mappe un identifiant de template, des mots-clés de détection, et les directeurs recommandés.
+---
+
+# Registry des templates de décision
+
+Ce fichier indexe tous les templates disponibles dans `references/decision-templates/`.
+Il sert à associer automatiquement une demande utilisateur aux directeurs les plus pertinents.
+
+templates:
+  - id: product-strategy
+    name: Stratégie Produit
+    keywords: [produit, product, fonctionnalité, feature, roadmap, utilisateur, ux, interface]
+    directors: [sundar-pichai, steve-jobs, reid-hoffman]
+
+  - id: ai-agent-design
+    name: Conception d'agent IA
+    keywords: [agent, ia, ia, llm, prompt, autonome, outil, mémoire, orchestration, chatbot, assistant]
+    directors: [sam-altman, demis-hassabis, feifei-li, andrew-ng]
+
+  - id: software-architecture
+    name: Architecture Logicielle
+    keywords: [architecture, logiciel, code, système, système, backend, frontend, api, base de données, microservice, déploiement]
+    directors: [jensen-huang, satya-nadella, sundar-pichai]
+
+  - id: prompt-engineering
+    name: Ingénierie de Prompts
+    keywords: [prompt, instructions, modèle, langage, génération, réponse, qualité, test, évaluation]
+    directors: [steve-jobs, andrew-ng, sam-altman]
+
+  - id: build-vs-buy
+    name: Build vs Buy
+    keywords: [construire, acheter, build, buy, fournisseur, partenaire, externe, interne, make-or-buy]
+    directors: [jensen-huang, satya-nadella, reid-hoffman]
+
+  - id: ethics-review
+    name: Revue Éthique et Humain
+    keywords: [éthique, éthique, bias, équité, humain, impact, société, responsable, governance, gouvernance]
+    directors: [feifei-li, satya-nadella, demis-hassabis]
+
+  - id: infrastructure
+    name: Infrastructure et Calcul
+    keywords: [infrastructure, calcul, gpu, tpu, datacenter, cloud, tco, performance, capacité, matériel]
+    directors: [jensen-huang, satya-nadella, sundar-pichai]
+
+  - id: innovation-moonshot
+    name: Innovation et Moonshot
+    keywords: [innovation, moonshot, 10x, rupture, révolutionnaire, radical, nouveau, création, idée]
+    directors: [elon-musk, sam-altman, reid-hoffman]
+
+  - id: growth-market
+    name: Croissance et Marché
+    keywords: [croissance, marché, go-to-market, distribution, réseau, scaling, adoption, utilisateurs]
+    directors: [reid-hoffman, sam-altman, sundar-pichai]
+
+  - id: research-rigor
+    name: Recherche et Rigueur Scientifique
+    keywords: [recherche, recherche, expérience, expérience, hypothèse, validation, reproductibilité, benchmark, preuve]
+    directors: [demis-hassabis, feifei-li, andrew-ng]
+
+directors_default: [sundar-pichai, sam-altman, demis-hassabis]

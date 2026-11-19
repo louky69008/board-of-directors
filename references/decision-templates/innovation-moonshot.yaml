@@ -1,0 +1,46 @@
+---
+name: innovation-moonshot
+description: Template pour les projets d'innovation radicale, de rupture ou de type moonshot.
+---
+
+id: innovation-moonshot
+name: Innovation et Moonshot
+description: >
+  Projets d'innovation radicale, de rupture ou de type moonshot. S'applique quand
+  l'objectif est un amélioration de 10x plutôt que 10%, ou la création d'un nouveau marché.
+
+recommended_directors:
+  - id: elon-musk
+    role: Innovation et premiers principes
+    focus: "Remettre en question les conventions, algorithme avant matériel, 10x thinking."
+  - id: sam-altman
+    role: Stratégie IA et levée de fonds
+    focus: "Plateforme, S-curve, capital comme arme stratégique, paris asymétriques."
+  - id: reid-hoffman
+    role: Croissance et réseaux
+    focus: "Blitzscaling, growth loops, sélection de marché, relations clés."
+
+key_questions:
+  - Quelle convention traitons-nous comme une loi de nature alors qu'elle est juste une habitude ?
+  - Quels composants, processus ou boucles d'approbation peuvent être supprimés entièrement ?
+  - À quoi ressemblerait une amélioration de 10x plutôt que de 10% ?
+  - Quel est le plus gros goulot d'étranglement technique ou organisationnel ?
+  - Quelle expérience rapide peut valider ou invalider l'hypothèse centrale dans 14 jours ?
+  - Quelles sont les 10 relations qui pourraient décupler notre progression ?
+
+success_criteria:
+  - Vision 10x formulée et distincte de l'optimisation incrémentale.
+  - Goulot d'étranglement principal identifié et attaqué en priorité.
+  - Expérience d'abort définie avec condition d'arrêt claire.
+  - Risques techniques acceptables, risques marché faibles.
+
+example_inputs:
+  - "Repenser complètement notre modèle économique avec l'IA générative."
+  - "Lancer un nouveau produit visant une rupture de marché dans les 18 mois."
+  - "Concevoir un système qui réduit les coûts d'un facteur 10."
+
+when_to_use: >
+  Dès qu'il s'agit d'innovation radicale, de moonshot, de rupture, ou de création
+  d'un nouveau marché plutôt que d'optimisation incrémentale.
+
+mental_models_refs: references/mental-models.md

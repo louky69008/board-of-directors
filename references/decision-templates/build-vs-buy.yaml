@@ -1,0 +1,46 @@
+---
+name: build-vs-buy
+description: Template pour décider entre construire en interne, acheter une solution ou s'associer à un partenaire.
+---
+
+id: build-vs-buy
+name: Build vs Buy
+description: >
+  Décider entre construire une solution en interne, acheter une solution existante,
+  ou s'associer à un partenaire tiers.
+
+recommended_directors:
+  - id: jensen-huang
+    role: Matériel et infrastructure
+    focus: "Build vs buy sur le calcul, TCO, silicium custom vs off-the-shelf."
+  - id: satya-nadella
+    role: Cloud et entreprise
+    focus: "Partenariat d'abord, intégration, verrouillage fournisseur, scénarios de sortie."
+  - id: reid-hoffman
+    role: Croissance et réseaux
+    focus: "Relations stratégiques, vitesse de mise sur le marché, économie unitaire."
+
+key_questions:
+  - Quelle fonction doit être construite, achetée ou confiée à un partenaire ?
+  - Quels sont les coûts totaux de chaque option (acquisition, intégration, maintenance, formation) ?
+  - Quel est le délai de mise sur le marché pour chaque option ?
+  - Quels risques de verrouillage fournisseur (vendor lock-in) et scénarios de sortie ?
+  - Quelle est la valeur stratégique de posséder cette compétence en interne ?
+  - Quel partenaire offre la meilleure distribution, confiance ou capacité complémentaire ?
+
+success_criteria:
+  - Matrice de décision build/buy/partner documentée avec scores.
+  - Analyse TCO complète pour chaque option.
+  - Plan de sortie et de réversibilité défini pour chaque option externe.
+  - Répartition claire de la valeur dans tout partenariat recommandé.
+
+example_inputs:
+  - "Décider si nous devons construire notre propre moteur de recommandation ou acheter une solution SaaS."
+  - "Choisir entre développer un outil de CI/CD interne ou adopter une plateforme existante."
+  - "Évaluer un partenariat stratégique pour distribuer notre produit via un tiers."
+
+when_to_use: >
+  Dès qu'il s'agit d'arbitrer entre construction interne, achat de solution externe,
+  ou partenariat stratégique.
+
+mental_models_refs: references/mental-models.md
