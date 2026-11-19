@@ -34,5 +34,8 @@ desktop.ini
 # Logs
 *.log
 
+# Audit trail (sessions générées à l'exécution)
+audit-logs/
+
 # Shell crash dumps (git-bash on Windows)
 *.stackdump
