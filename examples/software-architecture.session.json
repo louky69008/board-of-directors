@@ -1,0 +1,52 @@
+{
+  "session_id": "ex004-software-architecture",
+  "timestamp": "2026-11-19T11:15:00+00:00",
+  "question": "Choisir entre une architecture monolithique modulaire et des microservices pour une nouvelle application d'IA générative ?",
+  "template_used": "software-architecture",
+  "directors_consulted": ["jensen-huang", "satya-nadella", "sundar-pichai"],
+  "votes": [
+    {
+      "director_id": "jensen-huang",
+      "director_name": "Jensen Huang — Hardware & AI Infrastructure",
+      "thesis": "Architecture monolithique modulaire avec co-design full-stack pour optimiser le calcul IA et le TCO.",
+      "argument": "Les microservices ajoutent de la latence réseau et de la complexité opérationnelle qui nuisent aux charges de travail IA intensives en calcul.",
+      "risks": ["Complexité opérationnelle à l'échelle", "Difficulté de déploiement indépendant des modules", "Couplage fort entre composants"],
+      "next_step": "Définir les frontières de module et prototyper sur une charge de travail IA réelle",
+      "recommendation_label": "Pilot",
+      "confidence": 0.8,
+      "mental_models_used": ["Full Stack Optimization", "TCO", "Accelerated Computing"]
+    },
+    {
+      "director_id": "satya-nadella",
+      "director_name": "Satya Nadella — Cloud, Enterprise & Partnerships",
+      "thesis": "Adopter une approche hybride : monolithe pour le cœur, partenaires cloud pour l'élasticité, sécurité intégrée dès le jour 1.",
+      "argument": "Les clients entreprises valorisent l'intégration avec leurs systèmes existants (AD, SAP) et la conformité. Une approche partenaire réduit le risque.",
+      "risks": ["Verrouillage fournisseur cloud", "Complexité de gestion des partenaires", "Délais de mise en conformité"],
+      "next_step": "Évaluer 2 fournisseurs cloud et définir l'architecture d'intégration entreprise",
+      "recommendation_label": "Act Now",
+      "confidence": 0.79,
+      "mental_models_used": ["Customer Obsession", "Platform Thinking", "Partnerships as Multiplier"]
+    },
+    {
+      "director_id": "sundar-pichai",
+      "director_name": "Sundar Pichai — Product, Ecosystem & Scale",
+      "thesis": "Concevoir pour l'échelle dès le départ avec des standards ouverts et une architecture internationale.",
+      "argument": "Une fonction qui marche à 1 000 utilisateurs peut casser à 1 million. L'internationalisation et la modération doivent être intégrées dès le début.",
+      "risks": ["Sur-ingénierie prématurée", "Complexité de déploiement international", "Coût d'infrastructure élevé"],
+      "next_step": "Définir la métrique nord-star et planifier le déploiement en phases scalables",
+      "recommendation_label": "Investigate Further",
+      "confidence": 0.73,
+      "mental_models_used": ["Scale Thinking", "Ecosystem Orchestration", "Portfolio Balancing"]
+    }
+  ],
+  "synthesis": {
+    "summary": "Tension entre optimisation calcul (Jensen), intégration entreprise (Satya), et échelle globale (Sundar). Recommandation : monolithe modulaire pour le pilote, avec intégration cloud partenaire et conception évolutive.",
+    "integrated_recommendation": "Adopter une architecture monolithique modulaire pour le pilote (Jensen), intégrer un partenaire cloud pour l'élasticité et la conformité (Satya), et concevoir pour l'échelle à 10x utilisateurs (Sundar).",
+    "confidence": 0.76,
+    "contingencies": ["Si la latence réseau devient un goulot, consolider les services", "Si la conformité entreprise bloque, renforcer le partenariat cloud"],
+    "directors_consulted": ["jensen-huang", "satya-nadella", "sundar-pichai"],
+    "conflicts_surfaced": ["Calcul optimisé (Jensen) vs Échelle globale (Sundar) sur la granularité de l'architecture"],
+    "mental_models_prioritized": ["Full Stack Optimization", "Scale Thinking", "Customer Obsession"]
+  },
+  "export_path": "audit-logs/board-session-ex004-software-architecture.json"
+}

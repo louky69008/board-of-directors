@@ -1,0 +1,52 @@
+{
+  "session_id": "ex005-ethics-review",
+  "timestamp": "2026-11-19T11:20:00+00:00",
+  "question": "Évaluer les impacts éthiques d'un système de scoring de crédit automatisé basé sur l'IA ?",
+  "template_used": "ethics-review",
+  "directors_consulted": ["feifei-li", "satya-nadella", "demis-hassabis"],
+  "votes": [
+    {
+      "director_id": "feifei-li",
+      "director_name": "Fei-Fei Li — Human-Centered AI & Ethics",
+      "thesis": "Le système doit être auditable pour les biais, avec un override humain obligatoire sur toute décision de refus de crédit.",
+      "argument": "Les données de crédit reflètent des biais historiques. L'équité multidimensionnelle doit être mesurée sur plusieurs groupes, pas une seule métrique.",
+      "risks": ["Biais algorithmique contre des groupes protégés", "Opacité des décisions de crédit", "Absence de voie de recours pour les clients"],
+      "next_step": "Réaliser un audit de biais sur les données historiques et définir des mécanismes de redressement",
+      "recommendation_label": "Act Now",
+      "confidence": 0.9,
+      "mental_models_used": ["Fairness as Multi-Dimensional", "Data as Social Artifact", "Human Override"]
+    },
+    {
+      "director_id": "satya-nadella",
+      "director_name": "Satya Nadella — Cloud, Enterprise & Partnerships",
+      "thesis": "Intégrer sécurité, conformité et culture d'apprentissage dans l'architecture cible avant tout déploiement.",
+      "argument": "Un système de scoring financier doit respecter les réglementations (RGPD, lois bancaires) et permettre un changement organisationnel pour les équipes.",
+      "risks": ["Non-conformité réglementaire", "Failles de sécurité des données financières", "Résistance organisationnelle au changement"],
+      "next_step": "Cartographier les exigences de conformité et définir le modèle opérationnel post-déploiement",
+      "recommendation_label": "Act Now",
+      "confidence": 0.87,
+      "mental_models_used": ["Customer Obsession", "Culture Eats Strategy", "Cloud Economics"]
+    },
+    {
+      "director_id": "demis-hassabis",
+      "director_name": "Demis Hassabis — Research & Scientific Rigor",
+      "thesis": "Valider l'efficacité prédictive du modèle par des expériences contrôlées avec baselines avant toute décision de crédit.",
+      "argument": "Une corrélation dans les données ne prouve pas la causalité. Le mécanisme de décision doit être compris, pas seulement une boîte noire qui donne des scores.",
+      "risks": ["Modèle boîte noire non interprétable", "Résultats non généralisables à de nouvelles populations", "Sur-ajustement sur les données historiques"],
+      "next_step": "Construire un baseline de comparaison et tester le modèle sur un échantillon de validation indépendant",
+      "recommendation_label": "Investigate Further",
+      "confidence": 0.84,
+      "mental_models_used": ["Hypothesis-Driven Inquiry", "Baseline Thinking", "Mechanism Over Correlation"]
+    }
+  ],
+  "synthesis": {
+    "summary": "Trois exigences convergentes : équité et contrôle humain (Fei-Fei), conformité et sécurité (Satya), rigueur scientifique et interprétabilité (Demis). Recommandation : ne pas déployer sans audit de biais, mécanisme interprétable, et conformité validée.",
+    "integrated_recommendation": "Bloquer le déploiement tant que : (1) audit de biais terminé, (2) mécanisme de décision interprétable documenté, (3) conformité réglementaire validée. Override humain obligatoire sur tout refus.",
+    "confidence": 0.86,
+    "contingencies": ["Si l'audit de biais révèle des disparités, réentraîner avec des données équilibrées", "Si la conformité ne peut être démontrée, abandonner le projet"],
+    "directors_consulted": ["feifei-li", "satya-nadella", "demis-hassabis"],
+    "conflicts_surfaced": ["Déploiement rapide (Satya) vs Rigueur scientifique préalable (Demis) sur le timing"],
+    "mental_models_prioritized": ["Fairness as Multi-Dimensional", "Mechanism Over Correlation", "Customer Obsession"]
+  },
+  "export_path": "audit-logs/board-session-ex005-ethics-review.json"
+}

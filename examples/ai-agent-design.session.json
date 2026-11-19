@@ -1,0 +1,63 @@
+{
+  "session_id": "ex002-ai-agent-design",
+  "timestamp": "2026-11-19T11:05:00+00:00",
+  "question": "Comment concevoir un agent de rédaction de code autonome avec accès aux outils de développement et à la base de code ?",
+  "template_used": "ai-agent-design",
+  "directors_consulted": ["sam-altman", "demis-hassabis", "feifei-li", "andrew-ng"],
+  "votes": [
+    {
+      "director_id": "sam-altman",
+      "director_name": "Sam Altman — AI Strategy & Fundraising",
+      "thesis": "Construire une plateforme d'agents de code, pas un simple outil isolé, avec un moat basé sur les données d'usage.",
+      "argument": "Une plateforme permet à des tiers de créer des outils sur notre agent, créant des effets réseau et un avantage données durable.",
+      "risks": ["Complexité plateforme retarde le lancement", "Besoin de capital important", "Adoption développeurs incertaine"],
+      "next_step": "Définir l'architecture plateforme et le premier outil natif en 2 semaines",
+      "recommendation_label": "Pilot",
+      "confidence": 0.8,
+      "mental_models_used": ["Platform vs Feature", "Moat Mechanics", "Compounding Loops"]
+    },
+    {
+      "director_id": "demis-hassabis",
+      "director_name": "Demis Hassabis — Research & Scientific Rigor",
+      "thesis": "Valider l'efficacité de l'agent par des expériences contrôlées avec baselines avant déploiement.",
+      "argument": "Les revendications d'IA doivent être étayées par des mesures reproductibles, pas par des anecdotes. Un baseline de comparaison est essentiel.",
+      "risks": ["Résultats non reproductibles", "Biais de sélection des cas de test", "Sur-optimisation sur les benchmarks"],
+      "next_step": "Construire un benchmark de référence avec 50 tâches de codage et mesurer le taux de succès",
+      "recommendation_label": "Investigate Further",
+      "confidence": 0.85,
+      "mental_models_used": ["Hypothesis-Driven Inquiry", "Baseline Thinking", "Reproducibility & Generalization"]
+    },
+    {
+      "director_id": "feifei-li",
+      "director_name": "Fei-Fei Li — Human-Centered AI & Ethics",
+      "thesis": "L'agent doit garder un contrôle humain sur les modifications de code critiques et respecter la vie privée des développeurs.",
+      "argument": "L'IA ne doit pas écrire du code en production sans revue humaine. Les données de code contiennent potentiellement des informations sensibles.",
+      "risks": ["Biais dans les suggestions de code", "Fuite de code propriétaire", "Perte de compétence des développeurs"],
+      "next_step": "Définir des garde-fous humains et une politique de traitement des données de code",
+      "recommendation_label": "Act Now",
+      "confidence": 0.88,
+      "mental_models_used": ["Human-Centered Design", "Stakeholder Mapping", "Lifecycle Thinking"]
+    },
+    {
+      "director_id": "andrew-ng",
+      "director_name": "Andrew Ng — Applied AI & Learning",
+      "thesis": "Commencer par un cas d'usage précieux et faisable, mesurer la qualité des suggestions, itérer par l'analyse des erreurs.",
+      "argument": "La qualité des données de code et l'analyse des erreurs comptent plus que la complexité du modèle. Un petit pilote avec une métrique claire est préférable.",
+      "risks": ["Cas d'usage trop large", "Données d'entraînement insuffisantes", "Pas de métrique de succès définie"],
+      "next_step": "Sélectionner un cas d'usage unique (génération de tests unitaires) et définir une métrique de qualité",
+      "recommendation_label": "Act Now",
+      "confidence": 0.83,
+      "mental_models_used": ["Build-Measure-Learn", "Data > Model", "Error Analysis"]
+    }
+  ],
+  "synthesis": {
+    "summary": "Quatre perspectives alignées sur un démarrage pragmatique : plateforme à long terme (Sam), validation scientifique (Demis), contrôle humain (Fei-Fei), pilote data-first (Andrew). Recommandation : lancer un pilote circonscrit avec garde-fous humains et métriques claires.",
+    "integrated_recommendation": "Construire un pilote d'agent de génération de tests unitaires avec revue humaine obligatoire, benchmark de référence, et métrique de qualité mesurée. Évaluer l'extension plateforme après 8 semaines.",
+    "confidence": 0.82,
+    "contingencies": ["Si le taux de succès < 70%, réviser les prompts et les données d'entraînement", "Si les développeurs ne l'adoptent pas, réviser l'UX et les garde-fous"],
+    "directors_consulted": ["sam-altman", "demis-hassabis", "feifei-li", "andrew-ng"],
+    "conflicts_surfaced": ["Plateforme (Sam) vs Outil circonscrit (Andrew) sur la portée initiale"],
+    "mental_models_prioritized": ["Build-Measure-Learn", "Human-Centered Design", "Hypothesis-Driven Inquiry"]
+  },
+  "export_path": "audit-logs/board-session-ex002-ai-agent-design.json"
+}

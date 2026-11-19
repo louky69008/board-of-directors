@@ -1,0 +1,52 @@
+{
+  "session_id": "ex001-agent-support-client",
+  "timestamp": "2026-11-19T11:00:00+00:00",
+  "question": "Faut-il construire ou acheter un agent de support client autonome pour notre entreprise SaaS ?",
+  "template_used": "build-vs-buy",
+  "directors_consulted": ["jensen-huang", "satya-nadella", "reid-hoffman"],
+  "votes": [
+    {
+      "director_id": "jensen-huang",
+      "director_name": "Jensen Huang — Hardware & AI Infrastructure",
+      "thesis": "Construire l'agent en interne avec une architecture full-stack optimisée pour le calcul IA.",
+      "argument": "Les solutions SaaS existantes ne permettent pas le contrôle fin des prompts, des outils et de l'infrastructure de calcul nécessaire à notre charge de travail.",
+      "risks": ["Coût de développement élevé", "Délai de mise sur le marché plus long", "Besoin de talents IA spécialisés"],
+      "next_step": "Définir un MVP avec un agent de test sur un cas d'usage circonscrit en 4 semaines",
+      "recommendation_label": "Pilot",
+      "confidence": 0.78,
+      "mental_models_used": ["Full Stack Optimization", "TCO", "Build vs Buy"]
+    },
+    {
+      "director_id": "satya-nadella",
+      "director_name": "Satya Nadella — Cloud, Enterprise & Partnerships",
+      "thesis": "Acheter une solution existante et s'associer à un éditeur tiers pour l'intégration entreprise.",
+      "argument": "Nos clients企业价值 la fiabilité, la sécurité et la conformité out-of-the-box. Un partenariat accélère le time-to-market et réduit les risques opérationnels.",
+      "risks": ["Verrouillage fournisseur (vendor lock-in)", "Moins de personnalisation", "Dépendance à la roadmap du partenaire"],
+      "next_step": "Évaluer 3 fournisseurs SaaS et négocier un partenariat d'intégration",
+      "recommendation_label": "Act Now",
+      "confidence": 0.82,
+      "mental_models_used": ["Customer Obsession", "Partnerships as Multiplier", "Cloud Economics"]
+    },
+    {
+      "director_id": "reid-hoffman",
+      "director_name": "Reid Hoffman — Growth, Networks & Venture",
+      "thesis": "Construire en interne pour créer un avantage concurrentiel durable via les données et les effets réseau.",
+      "argument": "Détenir la technologie et les données utilisateur crée un moat compétitif. Acheter une solution externe ne nous donne pas cet avantage à long terme.",
+      "risks": ["Blitzscaling prématuré", "Coût d'acquisition client élevé", "Complexité opérationnelle"],
+      "next_step": "Lancer un pilote interne avec 10 clients beta pour valider les effets réseau",
+      "recommendation_label": "Pilot",
+      "confidence": 0.71,
+      "mental_models_used": ["Network Effects Taxonomy", "Growth Loops", "Market Selection > Execution"]
+    }
+  ],
+  "synthesis": {
+    "summary": "Le board est partagé : construire pour le moat à long terme (Jensen, Reid) vs acheter pour la rapidité et la conformité entreprise (Satya). Recommandation : pilote interne circonscrit avec évaluation parallèle de fournisseurs tiers.",
+    "integrated_recommendation": "Lancer un pilote interne sur un cas d'usage limité tout en échantillonnant 3 solutions SaaS en parallèle. Décision finale après 8 semaines.",
+    "confidence": 0.75,
+    "contingencies": ["Si le pilote dépasse le budget, basculer sur une solution SaaS", "Si aucun fournisseur ne répond aux exigences de conformité, poursuivre le build interne"],
+    "directors_consulted": ["jensen-huang", "satya-nadella", "reid-hoffman"],
+    "conflicts_surfaced": ["Build (moat, données) vs Buy (conformité, rapidité) sur le timing et la stratégie"],
+    "mental_models_prioritized": ["Network Effects Taxonomy", "Customer Obsession", "Full Stack Optimization"]
+  },
+  "export_path": "audit-logs/board-session-ex001-agent-support-client.json"
+}

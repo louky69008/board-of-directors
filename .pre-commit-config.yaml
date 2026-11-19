@@ -1,0 +1,29 @@
+---
+# Pre-commit hooks pour le Board of Directors
+# Installer avec : pre-commit install
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+
+  - repo: local
+    hooks:
+      - id: validate-yaml-frontmatter
+        name: Validate YAML frontmatter
+        entry: python scripts/validate_yaml_frontmatter.py
+        language: system
+        types: [markdown]
+        pass_filenames: false
+
+      - id: run-unit-tests
+        name: Run unit tests
+        entry: python -m pytest tests/ -q
+        language: system
+        types: [python]
+        pass_filenames: false

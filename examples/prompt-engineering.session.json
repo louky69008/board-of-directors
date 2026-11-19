@@ -1,0 +1,52 @@
+{
+  "session_id": "ex003-prompt-engineering",
+  "timestamp": "2026-11-19T11:10:00+00:00",
+  "question": "Comment améliorer la cohérence et la qualité des réponses d'un chatbot client sur des sujets techniques ?",
+  "template_used": "prompt-engineering",
+  "directors_consulted": ["steve-jobs", "andrew-ng", "sam-altman"],
+  "votes": [
+    {
+      "director_id": "steve-jobs",
+      "director_name": "Steve Jobs — Design & Simplicity",
+      "thesis": "Simplifier le prompt à l'essentiel : une instruction claire, un ton défini, et rien de superflu.",
+      "argument": "Les prompts complexes avec des dizaines de règles créent de la confusion. L'utilisateur doit obtenir une réponse claire en moins de 30 secondes.",
+      "risks": ["Simplification excessive qui omet des cas importants", "Perte de nuance technique"],
+      "next_step": "Réécrire le prompt en moins de 200 mots et tester sur 10 cas réels",
+      "recommendation_label": "Act Now",
+      "confidence": 0.85,
+      "mental_models_used": ["Simplicity as Sophistication", "Focus Means Saying No", "Demo-Driven Development"]
+    },
+    {
+      "director_id": "andrew-ng",
+      "director_name": "Andrew Ng — Applied AI & Learning",
+      "thesis": "Établir une baseline de qualité, analyser les erreurs, et itérer sur le prompt basé sur les données réelles.",
+      "argument": "Sans métrique de succès et sans analyse des erreurs, on ne sait pas si le prompt s'améliore vraiment. L'itération empirique est essentielle.",
+      "risks": ["Pas de baseline de référence", "Erreurs non catégorisées", "Itération sans direction claire"],
+      "next_step": "Créer un jeu de test de 50 questions clients et mesurer le taux de réponse correcte",
+      "recommendation_label": "Act Now",
+      "confidence": 0.82,
+      "mental_models_used": ["Build-Measure-Learn", "Error Analysis", "Data > Model"]
+    },
+    {
+      "director_id": "sam-altman",
+      "director_name": "Sam Altman — AI Strategy & Fundraising",
+      "thesis": "Traiter le prompt comme une plateforme : versionnable, testable, et améliorable avec les données d'usage.",
+      "argument": "Un prompt n'est pas statique. Il doit évoluer avec les retours utilisateurs et créer un avantage données à long terme.",
+      "risks": ["Sur-ingénierie du prompt", "Dépendance excessive à un seul modèle LLM", "Coût de maintenance des versions"],
+      "next_step": "Mettre en place un système de versioning des prompts et de collecte de feedback utilisateur",
+      "recommendation_label": "Pilot",
+      "confidence": 0.75,
+      "mental_models_used": ["Platform vs Feature", "Compounding Loops", "S-Curve Dynamics"]
+    }
+  ],
+  "synthesis": {
+    "summary": "Trois approches complémentaires : simplification radicale (Steve), itération data-first (Andrew), et versionning plateforme (Sam). Recommandation : simplifier le prompt immédiatement, établir une baseline, et versionner pour l'avenir.",
+    "integrated_recommendation": "Réécrire le prompt en <200 mots (Steve), mesurer sur 50 cas réels (Andrew), et mettre en place le versionning pour l'itération continue (Sam).",
+    "confidence": 0.81,
+    "contingencies": ["Si la simplification réduit la qualité technique, réintroduire les règles essentielles une par une", "Si le taux de réponse correcte < 80%, réviser les instructions système"],
+    "directors_consulted": ["steve-jobs", "andrew-ng", "sam-altman"],
+    "conflicts_surfaced": ["Simplicité immédiate (Steve) vs Plateforme versionnable (Sam) sur le timing de la complexité"],
+    "mental_models_prioritized": ["Simplicity as Sophistication", "Build-Measure-Learn", "Platform vs Feature"]
+  },
+  "export_path": "audit-logs/board-session-ex003-prompt-engineering.json"
+}
